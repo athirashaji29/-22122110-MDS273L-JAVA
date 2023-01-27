@@ -1,7 +1,7 @@
-##ATHIRA SHAJI 
-22122110
-MSDS-B
-athira.shaji@msds.christuniversity.in
+## ATHIRA SHAJI 
+## 22122110
+## MSDS-B
+## athira.shaji@msds.christuniversity.in
 
 here i done a Java Program that will collect your basic details that fall into different data types and displays them.
 After the details have been displayed, with the help of conditional statements, check if the gender of the user is 'm' or 'f'. It should print "MALE" for 'm' and "FEMALE" for 'f'.
