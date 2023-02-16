@@ -55,24 +55,19 @@ class lab3sol{
 
     }
     public static int fnmode(int[] array) {
-    // Sort the array in ascending order
     Arrays.sort(array);
 
     int mode = array[0];
     int count = 1;
     int maxCount = 1;
 
-    // Iterate over the sorted array, comparing adjacent elements
     for (int i = 1; i < array.length; i++) {
         if (array[i] == array[i-1]) {
-            // If the current element is the same as the previous element, increment count
             count++;
         } else {
-            // If the current element is different from the previous element, reset count to 1
             count = 1;
         }
 
-        // If the current count is greater than the maximum count, update the mode
         if (count > maxCount) {
             maxCount = count;
             mode = array[i];
