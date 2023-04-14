@@ -108,22 +108,7 @@ class lab7{
 
         
 
-        try {
-            File file1 = new File("output.txt");
-            FileWriter writer = new FileWriter(file1, true); // true means append to file if it exists
-            // writer.write(output);
-        
-        
-        writer.write("                         SUMMARY                       ");
-        writer.write("\nNAME              MEAN            MEDIAN          MODE       MAXIMUM         MINIMUM  ");
-        writer.write("\nSepal Length   "+fnmean(sepal_length)+"            "+fnmedian(sepal_length)+"             "+fnmode(sepal_length)+"           "+fnmin(sepal_length)+"          "+fnmax(sepal_length));
-        writer.write("\nSepal Width    "+fnmean(sepal_width)+"             "+fnmedian(sepal_width)+"              "+fnmode(sepal_width)+"            "+fnmin(sepal_width)+"           "+fnmax(sepal_width));
-        writer.write("\nPetal Length   "+fnmean(petal_length)+"            "+fnmedian(petal_length)+"             "+fnmode(petal_length)+"            "+fnmin(petal_length)+"         "+fnmax(petal_length));
-        writer.write("\nPetal Width    "+fnmean(petal_width)+"             "+fnmedian(petal_width)+"              "+fnmode(petal_width)+"             "+fnmin(petal_width)+"          "+fnmax(petal_width));
-        writer.close();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
+       
         System.out.println("                         SUMMARY                       ");
         System.out.println("--------------------------------------------------------");
         System.out.println("NAME   MEAN    MEDIAN    MODE   MAXIMUM  MINIMUM  ");
@@ -197,10 +182,46 @@ class lab7{
             System.out.println("Sepal Width   "+fnmean(virgis_width)+"  "+fnmedian(virgis_width)+" "+fnmode(virgis_width)+" "+fnmin(virgis_width)+"   "+fnmax(virgis_width));
             System.out.println("Petal Length  "+fnmean(virgip_length)+" "+fnmedian(virgip_length)+"  "+fnmode(virgip_length)+" "+fnmin(virgip_length)+" "+fnmax(virgip_length));
             System.out.println("Petal Width   "+fnmean(virgip_width)+" "+fnmedian(virgip_width)+" "+fnmode(virgip_width)+" "+fnmin(virgip_width)+"  "+fnmax(virgip_width));
-           
+            try {
+                File file1 = new File("output.txt");
+                FileWriter writer = new FileWriter(file1, true); // true means append to file if it exists
+                // writer.write(output);
+            
+            
+            writer.write("                         SUMMARY                       ");
+            writer.write("\nNAME              MEAN            MEDIAN          MODE       MAXIMUM         MINIMUM  ");
+            writer.write("\nSepal Length   "+fnmean(sepal_length)+"            "+fnmedian(sepal_length)+"             "+fnmode(sepal_length)+"           "+fnmin(sepal_length)+"          "+fnmax(sepal_length));
+            writer.write("\nSepal Width    "+fnmean(sepal_width)+"             "+fnmedian(sepal_width)+"              "+fnmode(sepal_width)+"            "+fnmin(sepal_width)+"           "+fnmax(sepal_width));
+            writer.write("\nPetal Length   "+fnmean(petal_length)+"            "+fnmedian(petal_length)+"             "+fnmode(petal_length)+"            "+fnmin(petal_length)+"         "+fnmax(petal_length));
+            writer.write("\nPetal Width    "+fnmean(petal_width)+"             "+fnmedian(petal_width)+"              "+fnmode(petal_width)+"            "+fnmin(petal_width)+"          "+fnmax(petal_width));
+            writer.write(" \n                      SUMMARY OF  SETOSA                        ");
+            writer.write("\n______________________________________________________________________");
+            writer.write("\nNAME   MEAN    MEDIAN    MODE   MAXIMUM  MINIMUM  ");
+            writer.write("\nSepal Length  "+fnmean(setosas_length)+"      "+fnmedian(setosas_length)+"        "+fnmode(setosas_length)+"         "+fnmin(setosas_length)+"     "+fnmax(setosas_length));
+            writer.write("\nSepal Width   "+fnmean(setosas_width)+"     "+fnmedian(setosas_width)+"        "+fnmode(setosas_width)+"         "+fnmin(setosas_width)+"           "+fnmax(setosas_width));
+            writer.write("\nPetal Length  "+fnmean(setosap_length)+"     "+fnmedian(setosap_length)+"        "+fnmode(setosap_length)+"         "+fnmin(setosap_length)+"      "+fnmax(setosap_length));
+            writer.write("\nPetal Width   "+fnmean(setosap_width)+"    "+fnmedian(setosap_width)+"        "+fnmode(setosap_width)+"         "+fnmin(setosap_width)+"           "+fnmax(setosap_width));
+            writer.write("\n                     SUMMARY OF VERSICOLOR                     ");
+            writer.write("\n______________________________________________________________________");
+            writer.write("\nSepal Length  "+fnmean(versis_length)+"      "+fnmedian(versis_length)+"   "+fnmode(versis_length)+" "+fnmin(versis_length)+"  "+fnmax(versis_length));
+            writer.write("\nSepal Width   "+fnmean(versis_width)+"       "+fnmedian(versis_width)+"    "+fnmode(versis_width)+"  "+fnmin(versis_width)+" "+fnmax(versis_width));
+            writer.write("\nPetal Length  "+fnmean(versip_length)+"  "+fnmedian(versip_length)+"    "+fnmode(versip_length)+" "+fnmin(versip_length)+"  "+fnmax(versip_length));
+            writer.write("\nPetal Width   "+fnmean(versip_width)+"  "+fnmedian(versip_width)+"     "+fnmode(versip_width)+"     "+fnmin(versip_width)+"  "+fnmax(versip_width));
+            writer.write("\n                     SUMMARY OF  virginica                  ");
+            writer.write("\n______________________________________________________________________");
+            writer.write("\nSepal Length  "+fnmean(virgis_length)+" "+fnmedian(virgis_length)+"  "+fnmode(virgis_length)+" "+fnmin(virgis_length)+"  "+fnmax(virgis_length));
+            writer.write("\nSepal Width   "+fnmean(virgis_width)+"  "+fnmedian(virgis_width)+" "+fnmode(virgis_width)+" "+fnmin(virgis_width)+"   "+fnmax(virgis_width));
+            writer.write("\nPetal Length  "+fnmean(virgip_length)+" "+fnmedian(virgip_length)+"  "+fnmode(virgip_length)+" "+fnmin(virgip_length)+" "+fnmax(virgip_length));
+            writer.write("\nPetal Width   "+fnmean(virgip_width)+" "+fnmedian(virgip_width)+" "+fnmode(virgip_width)+" "+fnmin(virgip_width)+"  "+fnmax(virgip_width));
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
             
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
 }
+
+      
