@@ -1,1 +1,2 @@
+This Java program allows you to create and manage a list of students. You can add students with their registration number, name, email, phone number, class and department. You can also search for a student by their registration number or name, display all students in the list, and exit the program.
 ![lab 3 (1)](https://user-images.githubusercontent.com/118505212/235302055-ce6ef832-09e8-42c4-8f46-af0a8150e96f.png)
