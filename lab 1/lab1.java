@@ -48,19 +48,19 @@ class lab1{
                 System.out.println("The Student is from the northern states of India");
                 break;
             case "bihar":
-                System.out.println("north");
+                System.out.println("The Student is from the northern states of India");
                 break;
             case "uttarpradesh":
-                System.out.println("north");
+                System.out.println("The Student is from the northern states of India");
                 break;
             case "uttaragand":
-                System.out.println("north");
+                System.out.println("The Student is from the northern states of India");
                 break;
             case "panjab":
-                System.out.println("north");
+                System.out.println("The Student is from the northern states of India");
                 break;
             case "ladakh":
-                System.out.println("north");
+                System.out.println("The Student is from the northern states of India");
                 break;
                 
                 
